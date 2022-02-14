@@ -1,5 +1,5 @@
 FROM docker.io/library/alpine:latest
-
+# Note the use of escaped $ and lack of $
 LABEL run "docker run -it --name NAME -e NAME=NAME -e IMAGE=IMAGE IMAGE echo RUN"
 LABEL install "docker run -it --name NAME -e NAME=NAME -e IMAGE=IMAGE IMAGE echo install"
 LABEL uninstall "/usr/bin/docker run -it --name NAME -e NAME=NAME -e IMAGE=IMAGE IMAGE echo uninstall"
